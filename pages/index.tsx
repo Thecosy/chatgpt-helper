@@ -14,26 +14,16 @@ import ResizablePanel from "../components/ResizablePanel";
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [desc, setDesc] = useState("");
-  const [lang, setLang] = useState<VibeType>("English");
+  const [lang, setLang] = useState<VibeType>("English teacher");
   const [generatedDescs, setGeneratedDescs] = useState<string>("");
   const defultDesc = 'Tell David to have a meeting next Monday morning from Hudson.'
   console.log("Streamed response: ", {generatedDescs});
   let promptObj = {
-    'English': "UK English",
-    "中文": "Simplified Chinese",
-    "繁體中文": "Traditional Chinese",
-    "日本語": "Japanese",
-    "Italiano": "Italian",
-    "Deutsch": "German",
-    "Español": "Spanish",
-    "Français": "French",
-    "Nederlands": "Dutch",
-    "한국어": "Korean",
-    "ភាសាខ្មែរ":"Khmer",
+    'English teacher': "UK English",
   }
   let text = desc||defultDesc
   // Generate a business email in UK English that is friendly, but still professional and appropriate for the workplace. The email topic is:
-  const prompt = `Generate a business email in ${promptObj[lang]} that is friendly, but still professional and appropriate for the workplace. The email topic is:${text}${text.slice(-1) === "." ? "" : "."}`
+  const prompt = `I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations. My first sentence is :${text}${text.slice(-1) === "." ? "" : "."}`
 
   const generateDesc = async (e: any) => {
     e.preventDefault();
@@ -53,7 +43,8 @@ const Home: NextPage = () => {
     if (!response.ok) {
       throw new Error(response.statusText);
     }
-
+    console.log("123123")
+    console.log(response)
     // This data is a ReadableStream
     const data = response.body;
     if (!data) {
@@ -77,7 +68,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Email Generator</title>
+        <title>Helper Generator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -110,7 +101,7 @@ const Home: NextPage = () => {
         </div>
 
         <h1 className="sm:text-3xl text-2xl max-w-1xl font-bold text-slate-900">
-          Generate your business emails in seconds
+          Generate your Helper in seconds
         </h1>
         {/* <p className="text-slate-500 mt-5">18,167 bios generated so far.</p> */}
         <div className="max-w-xl w-full">
@@ -122,7 +113,7 @@ const Home: NextPage = () => {
               alt="1 icon"
             />
             <p className="text-left font-medium">
-              Write a few sentences about your desired email.
+            Input what you want to say.
             </p>
           </div>
           <textarea
@@ -136,7 +127,7 @@ const Home: NextPage = () => {
           />
           <div className="flex mb-5 items-center space-x-3">
             <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
-            <p className="text-left font-medium">Select your language.</p>
+            <p className="text-left font-medium">Select your mode.</p>
           </div>
           <div className="block">
             <DropDown vibe={lang} setVibe={(newLang) => setLang(newLang)} />
@@ -147,7 +138,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-4 mt-3 hover:bg-black/80 w-full"
               onClick={(e) => generateDesc(e)}
             >
-              Generate your email &rarr;
+              Generate your helper &rarr;
             </button>
           )}
           {loading && (
@@ -172,7 +163,7 @@ const Home: NextPage = () => {
                 <>
                   <div>
                     <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
-                      Your generated email
+                      Your generated helper
                     </h2>
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto  whitespace-pre-wrap">
@@ -181,7 +172,7 @@ const Home: NextPage = () => {
                       className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border text-left"
                       onClick={() => {
                         navigator.clipboard.writeText(generatedDescs);
-                        toast("Email copied to clipboard", {
+                        toast("helper copied to clipboard", {
                           icon: "✂️",
                         });
                       }}

@@ -11,17 +11,7 @@ function classNames(...classes: string[]) {
 }
 
 const vibes = [
-  "English",
-  "中文",
-  "繁體中文",
-  "日本語",
-  "Italiano",
-  "Español",
-  "Deutsch",
-  "Français",
-  "Nederlands",
-  "한국어",
-  "ភាសាខ្មែរ",
+  "English teacher",
 ] as const;
 
 export type VibeType = typeof vibes[number];
