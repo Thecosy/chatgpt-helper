@@ -1,6 +1,6 @@
-# [EmailHelper](https://email-helper.vercel.app/)
+# [chatgptHelper](https://email-helper.vercel.app/)
 
-This project generates emails for you using AI.
+This project generates Helper for you using AI.
 
 [![](./public/screenshot3.png)](https://email-helper.vercel.app/)
 
