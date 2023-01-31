@@ -2,7 +2,7 @@
 
 This project generates Helper for you using AI.
 
-[![](https://vercel.com/7acf2d17-2597-4f3f-870b-edf7acdc3fe6)](https://chat.aircode.dev/)
+![img]([http://baidu.com/pic/doge.png](https://vercel.com/7acf2d17-2597-4f3f-870b-edf7acdc3fe6))
 
 ## Support
 `English`, `中文`, `日本語`, `Italiano`, `Deutsch`, `Español`, `Français`,`繁體中文`,`Nederlands` 
