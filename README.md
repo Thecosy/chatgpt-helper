@@ -2,7 +2,7 @@
 
 This project generates Helper for you using AI.
 
-![img](https://res.cloudinary.com/dxl1idlr5/image/upload/v1675312676/2023/02/d108f7df7ab7f1fdf9cc884abef3c297.png)
+![img](https://res.cloudinary.com/dxl1idlr5/image/upload/v1675322225/2023/02/d6ac6b1d3baaced408841f62fdfb4e5a.png)
 
 ## Support
 `English`, `中文`, `日本語`, `Italiano`, `Deutsch`, `Español`, `Français`,`繁體中文`,`Nederlands` 
