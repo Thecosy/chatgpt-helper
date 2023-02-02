@@ -1,8 +1,8 @@
-# [EmailHelper](https://email-helper.vercel.app/)
+# [chatgptHelper](https://email-helper.vercel.app/)
 
-This project generates emails for you using AI.
+This project generates Helper for you using AI.
 
-[![](./public/screenshot3.png)](https://email-helper.vercel.app/)
+![img]([http://baidu.com/pic/doge.png](https://vercel.com/7acf2d17-2597-4f3f-870b-edf7acdc3fe6))
 
 ## Support
 `English`, `中文`, `日本語`, `Italiano`, `Deutsch`, `Español`, `Français`,`繁體中文`,`Nederlands` 
