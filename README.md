@@ -1,4 +1,4 @@
-# [chatgptHelper](https://email-helper.vercel.app/)
+# [chatgpt-helper](https://email-helper.vercel.app/)
 
 This project generates Helper for you using AI.
 
