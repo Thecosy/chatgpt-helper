@@ -2,7 +2,7 @@
 
 This project generates Helper for you using AI.
 
-![img]([http://baidu.com/pic/doge.png](https://vercel.com/7acf2d17-2597-4f3f-870b-edf7acdc3fe6))
+![img](https://res.cloudinary.com/dxl1idlr5/image/upload/v1675312676/2023/02/d108f7df7ab7f1fdf9cc884abef3c297.png)
 
 ## Support
 `English`, `中文`, `日本語`, `Italiano`, `Deutsch`, `Español`, `Français`,`繁體中文`,`Nederlands` 
